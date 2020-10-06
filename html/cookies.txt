@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.playup.com	TRUE	/	FALSE	1999999999	__cfduid	d442a95ee679e5ca134e8b2255da725921533629319
+.appboycdn.com	TRUE	/	FALSE	1999999999	__cfduid	d4e15a29d450ef831ca03d4e8b8955a9d1533629325
+
