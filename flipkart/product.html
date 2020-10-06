@@ -1,0 +1,511 @@
+<!Doctype html>
+<html lang="en">
+ <head>
+ <link rel="stylesheet" href="css/bundle.086be7.css">
+	 <meta charset="utf-8">
+	 <title>Product</title>
+	 <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	 <meta content="" name="keywords">
+	  <meta content="" name="description"
+	  <!-- Favicons -->
+		  <link href="img/downloa.jpg" rel="icon">
+		  <link href="img/#" rel="apple-touch-icon">
+	 <!-- Bootstrap CSS File -->
+		<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		
+	  <!-- Main Stylesheet File -->
+		 <link href="css/style.css" rel="stylesheet">
+
+	  <!-- Responsive Stylesheet File -->
+	  <link href="css/responsive.css" rel="stylesheet">
+	   <style>
+	   <style>
+		#container {
+			height: 100%;
+		
+       position: relative;
+      text-align: center;
+      color: white;
+    }
+	.container {
+			  position: relative;
+			  border-radius: 5px; 
+			  padding: 20px 0 30px 0;
+		} 
+
+		/* style inputs and link buttons */
+		input,
+		.btn {
+		  width:100%;
+		  padding: 12px;
+		  border: none;
+		  border-radius: 4px;
+		  margin: 5px 10px;
+		  opacity: 0.85;
+		  display: inline-block;
+		  line-height: 20px;  text-decoration: none; /* remove underline from anchors */
+		  ;
+		}
+
+		input:hover,
+		.btn:hover {
+		  opacity: 1;
+		}
+
+		/* add appropriate colors to fb, twitter and google buttons */
+		.fb {
+			background-color: #3B5998;
+			color: white;
+			text-align: left;
+			width:150px ;
+			margin:0 0 40px;
+		}
+
+		.twitter {
+			background-color: #55ACEE;
+			color: white;
+			text-align: left;
+			width:150px ;
+			margin:-30px 0 40px;
+		}
+
+		.google {
+			background-color: #dd4b39;
+			color: white;
+			text-align: left;
+			width:150px ;
+			margin:-30px 0 40px;
+		}
+		/* style the submit button */
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+		  background-color: #45a049;
+		}
+
+		/* Two-column layout */
+		.col {
+		  float: left;
+		  width: 50%;
+		  margin: auto;
+		  padding: 0 50px;
+		  margin-top: 6px;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* vertical line */
+		.vl {
+		  position: absolute;
+		  left: 50%;
+		  transform: translate(-50%);
+		  border: 2px solid #ddd;
+		  height: 175px;
+		}
+
+		/* text inside the vertical line */
+		.vl-innertext {
+		  position: absolute;
+		  top: 50%;
+		  transform: translate(-50%, -50%);
+		  background-color: #f1f1f1;
+		  border: 1px solid #ccc;
+		  border-radius: 50%;
+		  padding: 8px 10px;
+		}
+
+		/* hide some text on medium and large screens */
+		.hide-md-lg {
+		  display: none;
+		}
+
+		/* bottom container */
+		.bottom-container {
+		  text-align: center;
+		  background-color: #666;
+		  border-radius: 0px 0px 4px 4px;
+		}
+
+		/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 650px) {
+		  .col {
+			width: 100%;
+			margin-top: 0;
+		  }
+		  /* hide the vertical line */
+		  .vl {
+			display: none;
+		  }
+		  /* show the hidden text on small screens */
+		  .hide-md-lg {
+			display: block;
+			text-align: center;
+		  }
+		}
+
+		 .modal-header, h3, .close {
+			  background-color: #5cb85c;
+			  color:white !important;
+			  text-align: center;
+			  font-size: 30px;
+		  }
+		  
+		.modal-footer {
+			  background-color: #f9f9f9;
+		  }
+		  .modal {
+			display:none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 20; /* Sit on top */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			padding-top: 60px;
+			float:center;
+			
+		}
+
+		/* Modal Content/Box */
+		.modal-content {
+			background-color: #fefefe;
+			margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+			border: 1px solid #888;
+			width: 50%; /* Could be more or less, depending on screen size */
+		}
+		.close1 {
+			position: absolute;
+			right: 25px;
+			top: auto;
+			color: #000;
+			font-size: 35px;
+			font-weight: bold;
+			margin:0;
+			padding:0;
+			border:0;
+		}
+
+		.close1:hover,
+		.close1:focus {
+			cursor: pointer;
+		}
+		/* Set a style for all buttons */
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;	
+		}
+	 </style> 
+  </head>
+ <body style="background-color:lightgray;">
+ <!--<div id="preloader"></div>-->
+
+  <header>
+    <!-- header-area start -->
+    <div id="sticker" class="header-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+
+            <!-- Navigation -->
+            <nav class="navbar navbar-default">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+                <!-- Brand -->
+                <a class="navbar-brand page-scroll sticky-logo" href="#">
+                  <h1><span>Cloth</span>House</h1>
+                  <!-- Uncomment below if you prefer to use an image logo -->
+                  <!-- <img src="img/logo.png" alt="" title=""> -->
+								</a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                    <a class="page-scroll" href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#about">About</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#">Men Wears</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#">Women Wears</a>
+                  </li>
+				   <li>
+                    <a class="page-scroll" href="#">Kid Wears</a>
+                  </li>
+       
+	  
+	              <li>
+                    <a href="#"  onclick="document.getElementById('id02').style.display='block'">Login</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#">Sign in</a>
+                  </li>
+				  
+				  
+				  
+                  <li>
+                    <a class="page-scroll" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- navbar-collapse -->
+            </nav>
+            <!-- END: Navigation -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-area end -->
+  </header>
+  <!-- header end -->
+  
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+ 
+<div class="container-fluid">
+<!-- ===============================for Womens========================-->
+<h3 style="margin-top:130px;"> Men Wears</h3>
+   <div class="col-sm-4">
+  <a href="#"> <img src="img\xxl-am-1072-aelo-original-imaf7pzgcgghd276.jpeg" height="60%" width="60%"/>
+
+  
+<h5 style="margin:50 0 20 0;">Aelo Solid Men's Round Neck White</h5></a>
+<h5> Black T-Shirt</h5>
+₹499
+Size: S, XXL
+</div>
+ <div class="col-sm-4">
+  <a href="#"> <img src="img\l-mens-.jpeg" height="40%" width="43%"/>
+  <h5 style="margin:50 0 20 0;">Maniac Checkered Men's Round Neck White</h5></a>
+<h5> Black T-Shirt</h5>
+₹529
+Size: S, M, L, XL
+
+</div>
+ <div class="col-sm-4">
+  <a href="#"> <img src="img\m-bts028.jpeg" height="60%" width="70%"/>
+   <h5 style="margin:50 0 20 0;">Billion PerfectFit Solid Men Henley Multicolor T-Shirt</h5></a>
+<h5> Black T-Shirt</h5>
+₹745
+Size: S, M, L, XL
+
+</div>	
+<!-- ===============================for Womens========================-->
+<h3 style="margin-top:500px;"> Womens Wears</h3><br/><br/>
+ <div class="col-sm-4">
+  <a href="#"> <img src="img\xl-k201-2-the-style-story-original-imaf7frbg3e7rzka.jpeg" height="80%" width="40%"/>
+  
+  </a>
+<h5 style="margin:50 0 20 0;">FabTag - The Style Story Women's Solid Straight Kurta</h5></a>
+
+₹314
+Size: S, M, L, XL
+</div>
+ <div class="col-sm-4">
+  <a href="#"> <img src="img\n-a-n-a-in-beautiful-indian-e-fashion-original-imaebyphkptgcywf.jpeg" height="60%" width="65%"/>
+  <h5 style="margin:50 0 20 0;">Ganga Silk Self Design Fashion Viscose Saree</h5></a>
+₹711
+Size: S, M, L, XL
+
+</div> <div class="col-sm-4">
+  <a href="#"> <img src="img\free-blbluvel-5220-bolly-lounge-original-imaf7thgsqznmusz.jpeg" height="60%" width="60%"/>
+   <h5 style="margin:50 0 20 0;">Bolly Lounge Self Design Daily Wear Velvet Saree</h5></a>
+₹599
+Size: S, M, L, XL
+  </a>
+
+</div> 
+<!--================================ for Kids======================== -->
+<h3 style="margin-top:480px;"> Kids Wears</h3><br/><br/>
+ 
+<div class="bhgxx2 col-12-12"><div class="_3O0U0u">
+   <div data-id="KETF6VA8FUQC4R63" style="width: 25%;">
+	 <div class="_3liAhj _1R0K0g" data-tkid="3ab06f33-8087-4123-b8b4-e2129ae7f22a.KETF6VA8FUQC4R63.SEARCH">
+	   <div><div>
+	     <div class="_3BTv9X" style="height: 280px; width: 200px;"><img class="_1Nyybr  _30XEf0" alt="Digimart Boys Festive &amp; Party Kurta, Waistcoat and Pyjama Set" src="./Kids Clothing - Buy Kids Wear_Kids Dresses Online_Children Wear at Best Prices in India_files/3-4-years-digibc001-digimart-original-imaffh6mtrzdefhx.jpeg"></div></div></div><div></div>
+	        <div class="_3gDSOa _3iGnbq">
+			   <div class="DsQ2eg">
+			     <svg xmlns="http://www.w3.org/2000/svg" class="_2oLiqr" width="16" height="16" >
+	             </svg>
+				</div> 
+			</div>
+	<a class="_2cLu-l" title="Digimart Boys Festive &amp; Party Kurta, Waistcoat and Pyjama Set" target="_blank" rel="noopener noreferrer">Digimart Boys Festive &amp; Party Kurta, Waistcoat and Pyja...</a>
+	<div class="niH0FQ _36Fcw_"><span id="productRating_LSTKETF6VA8FUQC4R63SVLEPB_KETF6VA8FUQC4R63_" class="_2_KrJI">
+	   <div class="hGSR34 _2beYZw">3.6 ★</div></span>
+	      <span class="_38sUEc">(961)</span>
+    </div>
+	     <a class="_1Vfi6u" target="_blank" rel="noopener noreferrer" href="#">
+	       <div class="_1uv9Cb"><div class="_1vC4OE">₹249</div>
+	          <div class="_3auQ3N">₹899</div>
+			     <div class="VGWI6T">
+	               <span>72% off</span>
+				 </div>
+			</div>
+	    </a>
+	<div class="OPF9v4">
+	<span class="_1xZuAn">Offers</span>
+	<span class="_3U7997">Bank Offer</span>
+	</div></div>
+	</div>
+	
+	<div data-id="KJEF7TC4TU4BYXVM" style="width: 25%;">
+	  <div class="_3liAhj _1R0K0g">
+	     <a class="Zhf2z-" target="_blank" rel="noopener noreferrer" href="#"><div><div>
+	       <div class="_3BTv9X" style="height: 280px; width: 200px;">
+	      <img class="_1Nyybr  _30XEf0" alt="Ziva Fashion Jegging For Girls" src="./Kids Clothing - Buy Kids Wear_Kids Dresses Online_Children Wear at Best Prices in India_files/2-3-years-tdf092-tiny-toon-original-imaf7fr84fkwdybv.jpeg"></div>
+	</div></div><div></div><div class="_3gDSOa _3iGnbq"><div class="DsQ2eg">
+	<svg xmlns="http://www.w3.org/2000/svg" class="_2oLiqr" width="16" height="16" viewBox="0 0 20 16">
+
+	</svg></div></div></a><a class="_2cLu-l" title="Ziva Fashion Jegging For Girls" target="_blank" rel="noopener noreferrer" href="#">Ziva Fashion Jegging For Girls</a>
+	<div class="niH0FQ _36Fcw_"><span  class="_2_KrJI"><div class="hGSR34 _2beYZw">4 ★</div></span>
+	<span class="_38sUEc">(42)</span></div><div class="_3LWrw9">
+	</div>
+	<a class="_1Vfi6u" target="_blank" rel="noopener noreferrer" href="#"><div class="_1uv9Cb">
+	<div class="_1vC4OE">₹530</div>
+	<div class="_3auQ3N">₹1,599</div>
+	<div class="VGWI6T">
+	<span>66% off</span></div></div></a>
+	<div class="OPF9v4"><span class="_1xZuAn">Offers</span><span class="_3U7997">Bank Offer</span></div><div class="_3ighFh"><div class="_34CFgI"></div>
+	<div>
+	</div></div></div></div>
+	
+<div style="width: 25%;">
+	<div class="_3liAhj _1R0K0g" data-tkid="899f6a56-1b9f-4321-aff5-43e0da893bab.KDRF2Y5KS2YQCHFS.SEARCH"><a class="Zhf2z-" target="_blank" rel="noopener noreferrer" href="https://www.flipkart.com/icable-dungaree-boy-s-girl-s-casual-animal-print-cotton/p/itmf2y6jvzafxhyz?pid=KDRF2Y5KS2YQCHFS&amp;lid=LSTKDRF2Y5KS2YQCHFSSSJ1DK&amp;marketplace=FLIPKART&amp;srno=b_1_3&amp;otracker=browse&amp;fm=organic&amp;iid=899f6a56-1b9f-4321-aff5-43e0da893bab.KDRF2Y5KS2YQCHFS.SEARCH&amp;ppt=StoreBrowse&amp;ppn=Store&amp;ssid=hbqmrs495c0000001538464524400"><div><div><div class="_3BTv9X" style="height: 280px; width: 200px;"><img class="_1Nyybr  _30XEf0" alt="Icable Dungaree For Boy&#39;s &amp; Girl&#39;s Casual Animal Print Cotton" src="./Kids Clothing - Buy Kids Wear_Kids Dresses Online_Children Wear at Best Prices in India_files/0-6-months-catbluegana-icable-original-imaf2y4jfxnfyvz6.jpeg"></div></div></div><div></div><div class="_3gDSOa _3iGnbq"><div class="DsQ2eg"><svg xmlns="http://www.w3.org/2000/svg" class="_2oLiqr" width="16" height="16" viewBox="0 0 20 16"><path d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z" fill="#2874F0" class="_35Y7Yo" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path></svg></div></div></a><a class="_2cLu-l" title="Icable Dungaree For Boy&#39;s &amp; Girl&#39;s Casual Animal Print Cotton" target="_blank" rel="noopener noreferrer" href="https://www.flipkart.com/icable-dungaree-boy-s-girl-s-casual-animal-print-cotton/p/itmf2y6jvzafxhyz?pid=KDRF2Y5KS2YQCHFS&amp;lid=LSTKDRF2Y5KS2YQCHFSSSJ1DK&amp;marketplace=FLIPKART&amp;srno=b_1_3&amp;otracker=browse&amp;fm=organic&amp;iid=899f6a56-1b9f-4321-aff5-43e0da893bab.KDRF2Y5KS2YQCHFS.SEARCH&amp;ppt=StoreBrowse&amp;ppn=Store&amp;ssid=hbqmrs495c0000001538464524400">Icable Dungaree For Boy's &amp; Girl's Casual Animal Print ...</a>
+	<div class="niH0FQ _36Fcw_"><span id="productRating_LSTKDRF2Y5KS2YQCHFSSSJ1DK_KDRF2Y5KS2YQCHFS_" class="_2_KrJI">
+	<div class="hGSR34 _2beYZw">4 ★</div></span>
+	<span class="_38sUEc">(196)</span></div>
+	<div class="_3LWrw9">
+						
+						</div>
+						<a class="_1Vfi6u" target="_blank" rel="noopener noreferrer" href="#">
+								<div class="_1uv9Cb"><div class="_1vC4OE">₹549</div>
+									<div class="_3auQ3N">₹999</div><div class="VGWI6T">
+										<span>45% off</span></div></div></a>
+										<div class="OPF9v4">
+											<span class="_1xZuAn">Offers</span>
+												<span class="_3U7997">Bank Offer</span>
+												   </div><div class="_3ighFh">
+												<div class="_34CFgI"></div>
+											<div>Size:&nbsp;0 - 6 Months</div>
+									</div></div></div>
+								<div data-id="KLCF8HYFNJCF93ZA" style="width: 25%;">
+								<div class="_3liAhj _1R0K0g" data-tkid="REQ1016d8cf0f934785ace923578487a774_1">
+						<div class="_3rMuct"><span>Ad</span></div>
+						<a class="Zhf2z-" target="_blank" rel="noopener noreferrer" href="#"><div><div>
+						<div class="_3BTv9X" style="height: 280px; width: 200px;">
+						 <img class="_1Nyybr  _30XEf0" alt="MF Retail Girl&#39;s Lehenga Choli Ethnic Wear Embroidered Lehenga, Choli and Dupatta Set" src="./Kids Clothing - Buy Kids Wear_Kids Dresses Online_Children Wear at Best Prices in India_files/13-14-years-mf-new-art-silk-1-nblu-mf-retail-original-imaf8deheun6qgk2.jpeg">
+						 </div></div></div><div></div>
+						 <div class="_3gDSOa _3iGnbq"><div class="DsQ2eg">
+						 <svg xmlns="http://www.w3.org/2000/svg" class="_2oLiqr" width="16" height="16" viewBox="0 0 20 16">
+						 </svg></div></div></a>
+						 <a class="_2cLu-l" title="MF Retail Girl&#39;s Lehenga Choli Ethnic Wear Embroidered Lehenga, Choli and Dupatta Set" target="_blank" rel="noopener noreferrer" href="#">MF Retail Girl's Lehenga Choli Ethnic Wear Embroidered ...</a>
+						 <a class="_1Vfi6u" target="_blank" rel="noopener noreferrer" href="#">
+						 <div class="_1uv9Cb">
+						 <div class="_1vC4OE">₹759</div>
+						 <div class="_3auQ3N">₹2,999</div>
+						 <div class="VGWI6T"><span>74% off</span></div></div></a>
+						 <div class="OPF9v4"><span class="_1xZuAn">Offers</span>
+						 <span class="_3U7997">Special Price &amp; 1 More</span></div>
+						 <div class="_3ighFh"><div class="_34CFgI"></div><div>Size:&nbsp;13 - 14 Years, 14 - 15 Years, 15 - 16 Years, NA</div>
+						 <div class="_3hobaQ">
+						</div></div></div></div></div></div>
+						
+						 <div class="bhgxx2 col-12-12"><div class="_3O0U0u">
+						 <div data-id="KJEF54Z9QRYQS8SG" style="width: 25%;"><div class="_3liAhj _1R0K0g">
+						<a class="Zhf2z-" target="_blank" rel="noopener noreferrer" href="#"><div><div>
+						<div class="_3BTv9X" style="height: 280px; width: 200px;">
+						<img class="_1Nyybr  _30XEf0" alt="Ziva Fashion Jegging For Girls" src="./Kids Clothing - Buy Kids Wear_Kids Dresses Online_Children Wear at Best Prices in India_files/10-11-years-k-rainbow-f-plus-fashion-original-imaf7fftt4y2qhg2.jpeg">
+						</div></div></div><div></div>
+						<div class="_3gDSOa _3iGnbq">
+						<div class="DsQ2eg">
+						<svg xmlns="http://www.w3.org/2000/svg" class="_2oLiqr" width="16" height="16" viewBox="0 0 20 16">
+</svg>
+</div></div></a>
+<a class="_2cLu-l" title="Ziva Fashion Jegging For Girls" target="_blank" rel="noopener noreferrer" href="#">Ziva Fashion Jegging For Girls</a>
+<div class="niH0FQ _36Fcw_">
+<span id="productRating_LSTKJEF54Z9QRYQS8SGUH3C5Y_KJEF54Z9QRYQS8SG_" class="_2_KrJI">
+<div class="hGSR34 _2beYZw">3.8 ★</div></span><span class="_38sUEc">(750)</span></div><div class="_3LWrw9">
+
+</div></div></div></div></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <div id="id02" class="modal">
+  
+<div class="container">
+  <form class="modal-content animate" action="user/login">
+    <div class="imgcontainer">	
+ 
+      <span onclick="document.getElementById('id02').style.display='none'" class="close1" title="Close Modal">&times;</span>
+	  <div class="modal-header" class="close1">
+	 
+          <button type="button" data-dismiss="modal"><h3>Login with Social Media or Manually</h3></button>
+       </div>
+	  
+     <center> <img src="img\download.png" alt="Avatar" class="avatar"></center>
+   
+    <div class="row">
+      
+      <div class="vl">
+        <span class="vl-innertext" style="color:black;">or</span>
+      </div>
+
+      <div class="col">
+			<a href="#" class="fb btn">
+			  <i class="fa fa-facebook fa-fw"> Login with Facebook</i>
+			 </a>
+			<a href="#" class="twitter btn">
+			  <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+			</a>
+			<a href="#" class="google btn"><i class="fa fa-google fa-fw">
+			   Login with Google+</i>
+			</a>
+      </div>
+
+      <div class="col">
+			<div class="hide-md-lg">
+			  <p>Or sign in manually:</p>
+			</div>
+			<input type="text1" name="username" placeholder="Username" required >
+			<input type="password1" name="password" placeholder="Password" required>
+			<input type="submit" value="Login">
+      </div>
+      
+    </div>
+    <div class="container" style="background-color:#f1f1f1; height:60px; width:100%;">
+      <span class="psw">  <a href="#">Forgot password?</a></span>
+    </div>
+	  
+    </div>
+  </form>
+  </div>
+  </div>
+ </div>
+  </html>
+ </body>
