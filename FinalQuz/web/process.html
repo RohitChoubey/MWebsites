@@ -1,0 +1,264 @@
+<!--
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@page import="java.sql.Connection" %>
+    <%@page import="java.sql.DriverManager" %>
+    <%@page import="java.sql.PreparedStatement" %>
+    <%@page import="java.sql.ResultSet" %>-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>TestPlus - Start Preparing for Bank, SSC, Railway &amp; all other Govt. Exams</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="description" content="TestPlus is a preparation platform for all Government exams - Banking, SSC, Railways, Insurance, Teaching &amp; Defence. Get best test series, video courses, books, e-books,test available to prepare for IBPS PO, SSC CGL, SBI PO, IBPS Clerk, Raillways exam, &amp; more!"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="msapplication-tap-highlight" content="no"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta property="title" content="Online Exam Preparation Portal - TestPlus" />
+	<meta property="og:url" content="http://www.TestPlus.com/" />
+	<meta property="og:site_name" content="TestPlus " />
+	<meta name="twitter:title" content="Online Exam Preparation Portal - TestPlus" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<!-- Bootstrap-Core-Css -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Testimonials-Css -->
+	<link href="css/mislider.css" rel="stylesheet" type="text/css" />
+	<link href="css/mislider-custom.css" rel="stylesheet" type="text/css" />
+	<!-- Style-Css -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<!-- Font-Awesome-Icons-Css -->
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	 rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<!-- //Web-Fonts -->
+</head>
+
+<body>
+	
+
+
+	<!-- course-->
+	<p id="section33"></p>
+	<div class="classes py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<h3 class="title text-capitalize font-weight-light text-dark text-center mb-sm-5 mb-4">choose your
+				<span class="font-weight-bold">Course</span>
+			</h3>
+			<div class="row pt-4">
+				<div class="col-lg-4 col-news-top text-center">
+					<!-- Left to right -->
+					<!-- normal -->
+					<div class="ih-item circle effect16 left_to_right mx-auto">
+						<a href="login.html">
+							<div class="img">
+								<img src="images/c1 (1).png" alt="img" class="img-fluid rounded-circle">
+							</div>
+							<div class="info">
+								<h3 class="text-capitalize text-white">CDS</h3>
+								<p>Click here for CDS Exams Practice</p>
+							</div>
+						</a>
+					</div>
+					<h6 class="small-heading text-capitalize text-center mt-4">
+						<a href="login.html" class="text-dark">CDS
+							
+						</a>
+					</h6>
+					<!-- end normal -->
+					<!-- end Left to right -->
+				</div>
+				<h6>
+				<i class="fas fa-long-arrow-alt-right ml-1"></i></h6>
+				<div class="col-lg-4 col-news-top text-center my-lg-0 my-sm-5 my-4">
+					<!-- Left to right -->
+					<!-- normal -->
+					<div class="ih-item circle effect16 left_to_right mx-auto">
+						<a href="login.html">
+							<div class="img">
+								<img src="images/c1 (2).png" alt="img" class="img-fluid rounded-circle">
+							</div>
+							<div class="info">
+								<h3 class="text-capitalize text-white">IBPS</h3>
+								<p>Click here for IBPS Exams Practice</p>
+							</div>
+						</a>
+					</div>
+					<h6 class="small-heading text-capitalize text-center mt-4">
+						<a href="login.html" class="text-dark">IBPS
+							<i class="fas fa-long-arrow-alt-right ml-1"></i>
+						</a>
+					</h6>
+					<!-- end normal -->
+					<!-- end Left to right -->
+				</div>
+				<div class="col-lg-4 col-news-top text-center">
+					<!-- Left to right -->
+					<!-- normal -->
+					<div class="ih-item circle effect16 left_to_right mx-auto">
+						<a href="login.html">
+							<div class="img">
+								<img src="images/c1(8).png" alt="img" class="img-fluid rounded-circle">
+							</div>
+							<div class="info">
+								<h3 class="text-capitalize text-white">Indian Railway</h3>
+								<p>Click here for IBPS Exams Practice</p>
+							</div>
+						</a>
+					</div>
+					<h6 class="small-heading text-capitalize text-center mt-4">
+						<a href="login.html" class="text-dark">Indian Railway
+							<i class="fas fa-long-arrow-alt-right ml-1"></i>
+						</a>
+					</h6>
+					<!-- end normal -->
+					<!-- end Left to right -->
+				</div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-lg-4 col-news-top text-center">
+					<!-- Left to right -->
+					<!-- normal -->
+					<div class="ih-item circle effect16 left_to_right mx-auto">
+						<a href="login.html">
+							<div class="img">
+								<img src="images/c1 (4).png" alt="img" class="img-fluid rounded-circle">
+							</div>
+							<div class="info">
+								<h3 class="text-capitalize text-white">NDA</h3>
+								<p>Click here for NDA Exams Practice</p>
+							</div>
+						</a>
+					</div>
+					<h6 class="small-heading text-capitalize text-center mt-4">
+						<a href="about.html" class="text-dark">NDA
+							<i class="fas fa-long-arrow-alt-right ml-1"></i>
+						</a>
+					</h6>
+					<!-- end normal -->
+					<!-- end Left to right -->
+				</div>
+				<div class="col-lg-4 col-news-top text-center  my-lg-0 my-sm-5 my-4">
+					<!-- Left to right -->
+					<!-- normal -->
+					<div class="ih-item circle effect16 left_to_right mx-auto">
+						<a href="login.html">
+							<div class="img">
+								<img src="images/c1 (5).png" alt="img" class="img-fluid rounded-circle">
+							</div>
+							<div class="info">
+								<h3 class="text-capitalize text-white">SBI  </h3>
+								<p>Click here for SBI Exams Practice</p>
+							</div>
+						</a>
+					</div>
+					<h6 class="small-heading text-capitalize text-center mt-4">
+						<a href="login.html" class="text-dark">SBI
+							<i class="fas fa-long-arrow-alt-right ml-1"></i>
+						</a>
+					</h6>
+					<!-- end normal -->
+					<!-- end Left to right -->
+				</div>
+				<div class="col-lg-4 col-news-top text-center">
+					<!-- Left to right -->
+					<!-- normal -->
+					<div class="ih-item circle effect16 left_to_right mx-auto">
+						<a href="login.html">
+							<div class="img">
+								<img src="images/c1 (6).png" alt="img" class="img-fluid rounded-circle">
+							</div>
+							<div class="info">
+								<h3 class="text-capitalize text-white">SSC </h3>
+								<p>Click here for SSC Exams Practice</p>
+							</div>
+						</a>
+					</div>
+					<h6 class="small-heading text-capitalize text-center mt-4">
+						<a href="login.html" class="text-dark">SSC
+							<i class="fas fa-long-arrow-alt-right ml-1"></i>
+						</a>
+					</h6>
+					<!-- end normal -->
+					<!-- end Left to right -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //course -->
+
+
+	<!-- Js files -->
+	<!-- JavaScript -->
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!-- Default-JavaScript-File -->
+	<script src="js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+	<!-- banner slider -->
+	<script src="js/slider.js"></script>
+	<!-- //banner slider -->
+
+	<!-- testimonial-plugin -->
+	<script src="js/mislider.js"></script>
+	<script>
+		jQuery(function ($) {
+			var slider = $('.mis-stage').miSlider({
+				//  The height of the stage in px. Options: false or positive integer. false = height is calculated using maximum slide heights. Default: false
+				stageHeight: 320,
+				//  Number of slides visible at one time. Options: false or positive integer. false = Fit as many as possible.  Default: 1
+				slidesOnStage: false,
+				//  The location of the current slide on the stage. Options: 'left', 'right', 'center'. Defualt: 'left'
+				slidePosition: 'center',
+				//  The slide to start on. Options: 'beg', 'mid', 'end' or slide number starting at 1 - '1','2','3', etc. Defualt: 'beg'
+				slideStart: 'mid',
+				//  The relative percentage scaling factor of the current slide - other slides are scaled down. Options: positive number 100 or higher. 100 = No scaling. Defualt: 100
+				slideScaling: 150,
+				//  The vertical offset of the slide center as a percentage of slide height. Options:  positive or negative number. Neg value = up. Pos value = down. 0 = No offset. Default: 0
+				offsetV: -5,
+				//  Center slide contents vertically - Boolean. Default: false
+				centerV: true,
+				//  Opacity of the prev and next button navigation when not transitioning. Options: Number between 0 and 1. 0 (transparent) - 1 (opaque). Default: .5
+				navButtonsOpacity: 1,
+			});
+		});
+	</script>
+	<!-- //testimonial-plugin -->
+
+	<!-- numscroller-js-file -->
+	<script src="js/numscroller-1.0.js"></script>
+	<!-- //numscroller-js-file -->
+
+	<!-- smooth scrolling -->
+	<script src="js/SmoothScroll.min.js"></script>
+	<!-- //smooth scrolling -->
+
+	<!-- move-top -->
+	<script src="js/move-top.js"></script>
+	<!-- easing -->
+	<script src="js/easing.js"></script>
+	<!--  necessary snippets for few javascript files -->
+	<script src="js/edulearn.js"></script>
+
+	<!-- //Js files -->
+
+</body>
+
+</html>
