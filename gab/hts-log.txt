@@ -1,0 +1,74 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 14 Feb 2020 13:19:21 at http://gallantsalons.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://gallantsalons.com/ -O1 "C:\My Web Sites\gab" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:19:26	Warning: 	Note: due to gallantsalons.com remote robots.txt rules, links beginning with these path will be forbidden: /wp-admin/ (see in the options to disable this)
+13:27:24	Error: 	"Method Not Allowed" (405) at link gallantsalons.com/xmlrpc.php (from gallantsalons.com/)
+13:29:21	Warning: 	Retry after error -4 (No data (connection closed)) at link gallantsalons.com/wp-includes/js/jquery/jquery.js?ver=1.12.4 (from gallantsalons.com/)
+13:29:21	Warning: 	Retry after error -4 (No data (connection closed)) at link gallantsalons.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fgallantsalons.com%2F&format=xml (from gallantsalons.com/)
+13:29:39	Warning: 	engine: warning: unserialize error for gallantsalons.com/about-us/ (C:/My Web Sites/gab/gallantsalons.com/about-us/index.html), file disappeared: No such file or directory
+13:30:32	Warning: 	Retry after error -2 (Receive Time Out) at link gallantsalons.com/wp-content/uploads/2014/07/7a.jpg (from gallantsalons.com/)
+13:31:14	Warning: 	Retry after error -2 (Receive Time Out) at link gallantsalons.com/wp-content/uploads/2014/07/9a.jpg (from gallantsalons.com/)
+13:31:14	Warning: 	Retry after error -4 (No data (connection closed)) at link gallantsalons.com/wp-content/uploads/2014/07/5a-350x250.jpg (from gallantsalons.com/)
+13:31:14	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/projects/project-7/ (from gallantsalons.com/)
+13:31:14	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/wp-content/uploads/2014/07/5a.jpg (from gallantsalons.com/)
+13:31:17	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/wp-content/uploads/2014/07/4a-350x250.jpg (from gallantsalons.com/)
+13:31:20	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/projects/project-5/ (from gallantsalons.com/)
+13:31:23	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/wp-content/uploads/2014/07/4a.jpg (from gallantsalons.com/)
+13:32:18	Warning: 	Retry after error -4 (No data (connection closed)) at link gallantsalons.com/wp-content/themes/moesia/js/skip-link-focus-fix.js?ver=20130115 (from gallantsalons.com/)
+13:32:18	Warning: 	Retry after error -4 (No data (connection closed)) at link gallantsalons.com/wp-content/themes/moesia/fonts/fontawesome-webfont.eot?v=4.7.0 (from gallantsalons.com/wp-content/themes/moesia/fonts/font-awesome.min.css?ver=4.9.13)
+13:32:20	Warning: 	Retry after error -4 (No data (connection closed)) at link gallantsalons.com/wp-content/themes/moesia/inc/prettyphoto/images/prettyPhoto/light_rounded/btnNext.png (from gallantsalons.com/wp-content/themes/moesia/inc/prettyphoto/css/prettyPhoto.min.css?ver=4.9.13)
+13:32:20	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/wp-content/themes/moesia/inc/prettyphoto/images/prettyPhoto/dark_rounded/btnPrevious.png (from gallantsalons.com/wp-content/themes/moesia/inc/prettyphoto/css/prettyPhoto.min.css?ver=4.9.13)
+13:32:20	Warning: 	Retry after error -4 (No data (connection closed)) at link gallantsalons.com/wp-content/themes/moesia/inc/prettyphoto/images/prettyPhoto/dark_square/btnNext.png (from gallantsalons.com/wp-content/themes/moesia/inc/prettyphoto/css/prettyPhoto.min.css?ver=4.9.13)
+13:32:22	Warning: 	engine: warning: unserialize error for gallantsalons.com/author/admin/ (C:/My Web Sites/gab/gallantsalons.com/author/admin/index.html), file disappeared: No such file or directory
+13:32:33	Warning: 	Retry after error -4 (No data (connection closed)) at link gallantsalons.com/wp-login.php (from gallantsalons.com/blog/)
+13:32:33	Warning: 	Moved Permanently for gallantsalons.com/?p=2574
+13:32:33	Warning: 	File has moved from gallantsalons.com/?p=2574 to http://gallantsalons.com/contact/
+13:32:33	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/projects/make-up/feed/ (from gallantsalons.com/projects/make-up/)
+13:32:34	Warning: 	Moved Permanently for gallantsalons.com/?p=2555
+13:32:34	Warning: 	File has moved from gallantsalons.com/?p=2555 to http://gallantsalons.com/projects/make-up/
+13:32:34	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fgallantsalons.com%2Fprojects%2Fmake-up%2F (from gallantsalons.com/projects/make-up/)
+13:32:36	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/projects/kids-haircut/feed/ (from gallantsalons.com/projects/kids-haircut/)
+13:32:37	Warning: 	Moved Permanently for gallantsalons.com/?p=2553
+13:32:37	Warning: 	File has moved from gallantsalons.com/?p=2553 to http://gallantsalons.com/projects/kids-haircut/
+13:32:37	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fgallantsalons.com%2Fprojects%2Fkids-haircut%2F (from gallantsalons.com/projects/kids-haircut/)
+13:32:38	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fgallantsalons.com%2Fprojects%2Fkids-haircut%2F&format=xml (from gallantsalons.com/projects/kids-haircut/)
+13:32:38	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/projects/project-7/ (from gallantsalons.com/)
+13:32:39	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/wp-content/uploads/2014/07/5a.jpg (from gallantsalons.com/)
+13:32:43	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/projects/project-3/ (from gallantsalons.com/projects/project-4/)
+13:32:43	Warning: 	Moved Permanently for gallantsalons.com/?p=2180
+13:32:43	Warning: 	File has moved from gallantsalons.com/?p=2180 to http://gallantsalons.com/projects/project-4/
+13:32:43	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fgallantsalons.com%2Fprojects%2Fproject-4%2F&format=xml (from gallantsalons.com/projects/project-4/)
+13:32:44	Warning: 	Moved Permanently for gallantsalons.com/?p=1
+13:32:44	Warning: 	File has moved from gallantsalons.com/?p=1 to http://gallantsalons.com/hello-world/
+13:32:44	Warning: 	Moved Permanently for gallantsalons.com/?p=2048
+13:32:44	Warning: 	File has moved from gallantsalons.com/?p=2048 to http://gallantsalons.com/sed-eleifend-sed/
+13:32:44	Warning: 	Moved Permanently for gallantsalons.com/?p=2049
+13:32:44	Warning: 	File has moved from gallantsalons.com/?p=2049 to http://gallantsalons.com/ut-lobortis-urna-non/
+13:33:12	Warning: 	Moved Permanently for gallantsalons.com/?p=2181
+13:33:12	Warning: 	File has moved from gallantsalons.com/?p=2181 to http://gallantsalons.com/projects/project-5/
+13:33:35	Warning: 	Moved Permanently for gallantsalons.com/?p=2127
+13:33:35	Warning: 	File has moved from gallantsalons.com/?p=2127 to http://gallantsalons.com/services/service-six/
+13:33:35	Warning: 	Moved Permanently for gallantsalons.com/?p=2126
+13:33:35	Warning: 	File has moved from gallantsalons.com/?p=2126 to http://gallantsalons.com/services/service-five/
+13:33:41	Warning: 	Moved Permanently for gallantsalons.com/?p=2125
+13:33:41	Warning: 	File has moved from gallantsalons.com/?p=2125 to http://gallantsalons.com/services/service-four/
+13:33:42	Warning: 	Moved Permanently for gallantsalons.com/?p=2545
+13:33:42	Warning: 	File has moved from gallantsalons.com/?p=2545 to http://gallantsalons.com/projects/project-7/
+13:33:42	Warning: 	Retry after error -4 (No data (connection closed)) at link gallantsalons.com/projects/project-3/feed/ (from gallantsalons.com/projects/project-3/)
+13:33:42	Warning: 	Moved Permanently for gallantsalons.com/?p=2179
+13:33:42	Warning: 	File has moved from gallantsalons.com/?p=2179 to http://gallantsalons.com/projects/project-3/
+13:33:42	Warning: 	Retry after error -4 (Connect Error) at link gallantsalons.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fgallantsalons.com%2Fprojects%2Fproject-3%2F (from gallantsalons.com/projects/project-3/)
+13:33:45	Warning: 	Moved Permanently for gallantsalons.com/?p=2124
+13:33:45	Warning: 	File has moved from gallantsalons.com/?p=2124 to http://gallantsalons.com/services/service-three/
+13:33:47	Warning: 	Moved Permanently for gallantsalons.com/?p=2123
+13:33:47	Warning: 	File has moved from gallantsalons.com/?p=2123 to http://gallantsalons.com/services/service-two/
+13:33:47	Warning: 	Moved Permanently for gallantsalons.com/?p=2122
+13:33:47	Warning: 	File has moved from gallantsalons.com/?p=2122 to http://gallantsalons.com/services/service-one/
+
+HTTrack Website Copier/3.49-2 mirror complete in 14 minutes 26 seconds : 283 links scanned, 238 files written (13068403 bytes overall) [12712999 bytes received at 14680 bytes/sec], 685403 bytes transferred using HTTP compression in 32 files, ratio 31%, 1.7 requests per connection
+(1 errors, 62 warnings, 0 messages)
