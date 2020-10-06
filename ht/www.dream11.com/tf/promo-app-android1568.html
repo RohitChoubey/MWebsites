@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.dream11.com/tf/promo-app-android.html?utm_term=appPromoMini by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Aug 2018 07:17:09 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>Dream11</title>
+<style>
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; outline: 0; vertical-align: baseline; }
+body { overflow: hidden; line-height: 1; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+nav ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+input, select { vertical-align: middle; }
+body { font-family: Arial, "Trebuchet MS", "Helvetica LT Std"; font-size: 0.750em; }
+.mainWrapper { background: #960a0a; float: left; overflow: hidden; width: 100%; }
+.mainWrapper > .header { box-sizing: border-box; float: left; padding: 6% 5%; width: 100%; }
+.mainWrapper > .header > img { float: left; margin: 3% 0px; }
+.mainWrapper > .header > img.logo {width: 50%;}
+.mainWrapper > .header > a { float: right; text-decoration: none; }
+.mainWrapper > .image { float: left; margin: 3% 0 0; text-align: center; width: 100%; }
+.mainWrapper > .image > img { width: 80%; }
+.footer { background-color: #fafafa; bottom: 0; box-sizing: border-box; float: left; left: 0; position: fixed; text-align: center; width: 100%; }
+.footer > p { color: #000; font-weight: bold; float: left; font-size: 1.1em; line-height: 1.3em; padding: 3% 0 0; width: 100%; }
+.footer img { margin: 3% 0 3%; width: 32%; }
+</style>
+
+</head>
+<body>
+<div class="mainWrapper" id="mainWrapper">
+  <div class="header" style="text-align:center"><img src="images/mobile/logo_i.png" class="logo" alt="Dream11" style="float:none;" /></div>
+  <div class="image"><img src="images/appmarketing/nexus.png" alt=""/></div>
+</div>
+<div class="footer" id="footer">
+  <p>For faster and better gameplay<br>
+    get our Android App</p>
+  <a id = "androidLink"><img src="images/mobile/app-store-btn-android%402x.png" alt=""/></a></div>
+<script>setTimeout("document.getElementById('mainWrapper').style.maxHeight = window.innerHeight - document.getElementById('footer').clientHeight+'px'",100);
+	function getParamsAsObject(){
+        var paramsStr = location.search;
+        if(paramsStr.length > 0 && paramsStr.indexOf('=') != -1){
+            var paramsStr = paramsStr.substring(1);
+            if(paramsStr.indexOf('&') == paramsStr.length - 1){
+                paramsStr = paramsStr.substring(0, paramsStr.length - 1)
+            }
+            try{
+                var parObj = JSON.parse('{"' + decodeURI(paramsStr).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+                return parObj;
+            }catch(perr){
+                return {};
+            }
+        }else{
+            return {};
+        }
+    }
+	if(document.location.search == ""){
+		var appPromotion = "?appPromotion=0";
+	}else if(document.location.search.indexOf('appPromotion') == -1){
+		var appPromotion = document.location.search+"&appPromotion=0";
+	}else{
+		var appPromotion = document.location.search	
+	}
+
+	var linkAndroid = document.getElementById("androidLink");
+	// linkAndroid.setAttribute('href', 'https://fantasycricket.dream11.com/android.html'+document.location.search);
+
+	function setBranchUrl(){
+		try {
+				var branchData = {
+				        mydata: "blank",
+				        '$desktop_url': 'https://fantasycricket.dream11.com/android.html',
+				        '$og_title': 'Dream11 App'
+				    };
+				  var queryParams = getParamsAsObject();
+				  for(var key in queryParams){
+				  	branchData[key] = queryParams[key];
+				  }
+				  if(branchData['utm_term']){
+				  	branchData['utm_content'] = branchData['utm_term'];
+				  }
+				(function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="../../cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
+				branch.init('key_live_koaZtonegOFw8H93TddMbeeczyaP8yw6');
+				branch.link({
+				    tags: [ 'tag1', 'tag2' ],
+				    channel: 'ucb',
+				    feature: 'dashboard',
+				    stage: branchData['utm_term'] ? branchData['utm_term'] : '',
+				    data: branchData
+				}, function(err, link) {
+				    if(err) console.log(err);
+				    if(link)
+				    	linkAndroid.setAttribute('href', link);
+				    else
+				    	linkAndroid.setAttribute('href', 'https://fantasycricket.dream11.com/android.html'+document.location.search);
+				});
+				
+		} catch(e){console.log(e)}
+	}
+	setBranchUrl();
+</script>
+</body>
+
+<!-- Mirrored from www.dream11.com/tf/promo-app-android.html?utm_term=appPromoMini by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Aug 2018 07:17:11 GMT -->
+</html>
